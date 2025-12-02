@@ -1,5 +1,19 @@
 import { useState } from "react";
 
+/*
+JSX 기본 문법
+ - JSX 규칙 4가지
+  1. 반드시 하나의 부모 태그로 감싸야 함
+     -> JSX 사용 시 감싸는 부모 태그는 항상 존재, HTML에 부모 태그가 필요 없는 경우 Fragment(<></>) 사용
+     -> 부모 태그 없이 사용하면 오류 발생
+  2. JSX에서 JavaScript 사용 → {}
+  3. 속성은 camelCase 사용
+  4. JSX에서는 표현식(값)만 가능, 문(statement)은 불가능
+ - 조건부 렌더링
+  1. 삼항 연산자
+  2. && 연산자
+  3. 변수에 JSX를 담아서 처리 가능
+*/
 function App() {
   /*
     1.반드시 하나의 부모 태그로 감싸야 함
@@ -130,7 +144,7 @@ function App() {
   // ========================================================================= 예제 : s
 
   // isLogin 초기값 false 선언 
-  // 로그인 여부 상태 
+  // 로그인 여부 상태  
   const [isLogin, setIsLogin] = useState(false);
   
   // userNmae 초기값 "" 선언
