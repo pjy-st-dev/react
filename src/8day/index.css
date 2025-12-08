@@ -1,0 +1,25 @@
+:root {
+  --bg: #ffffff;
+  --item-bg: #fafafa;
+  --text: #222;
+  --border: #ddd;
+  --input-bg: #ffffff;
+}
+
+body.dark-mode {
+  --bg: #1d1f22;
+  --item-bg: #2a2d31;
+  --text: #eaeaea;
+  --border: #444;
+  --input-bg: #1d1f22;
+  background: #111;
+  color: var(--text);
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.25s ease, color 0.25s ease;
+}
